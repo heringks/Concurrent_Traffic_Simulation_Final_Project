@@ -81,6 +81,9 @@ void TrafficLight::cycleThroughPhases()
     int kMax = 4000;     // Minimum cycle duration in ms
     double cycleDuration = static_cast <float> (rand() % kRange + kMax); // duration of a traffic light phase in ms
 
+    // NOTE: To complete the code related to measuring the time between two loop cycles, I copied similar code from 
+    // Vehicle.cpp (Vehicle::Drive()) and changed as necessary.
+
     std::chrono::time_point<std::chrono::system_clock> lastUpdate;
 
     // init stop watch
